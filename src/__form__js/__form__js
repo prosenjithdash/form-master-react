@@ -1,4 +1,5 @@
 /*
-1. Use form tag and name to get values
-2. 
+1. Use form tag and onSubmit handler with event (e) and  name to get values
+
+2. use individual state
 */

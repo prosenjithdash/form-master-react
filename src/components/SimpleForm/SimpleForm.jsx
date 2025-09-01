@@ -5,6 +5,7 @@ const SimpleForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('Form Submitted.')
+        // Access values
         console.log(e.target.name.value)
         console.log(e.target.email.value)
         console.log(e.target.password.value)
