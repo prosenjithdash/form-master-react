@@ -14,6 +14,7 @@ const StateFulForm = () => {
         e.preventDefault();
         console.log(email)
         console.log(password)
+        console.log(name)
     }
 
     const handleNameChange = (e) => {
