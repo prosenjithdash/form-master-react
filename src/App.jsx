@@ -1,5 +1,6 @@
 
 import './App.css'
+import Grandpa from './components/Grandpa/Grandpa'
 import HookForm from './components/HookForm/HookForm'
 import ReusableForm from './components/ReusableForm/ReusableForm'
 // import RefForm from './components/RefForm/RefForm'
@@ -8,22 +9,14 @@ import StateFulForm from './components/StateFulForm/StateFulForm'
 
 function App() {
 
-  // const handleSignUpSubmit = (data) => {
-  //   console.log('SignUp data: ',data)
+ 
 
+  // const handleSignup = (data) => {
+  //   console.log('Signup data:',data)
   // }
-
-  // const handleUpdateProfile = (data) => {
-  //   console.log('Update Profile data: ', data)
-
+  // const handleUpdate = (data) => {
+  //   console.log('Update data:',data)
   // }
-
-  const handleSignup = (data) => {
-    console.log('Signup data:',data)
-  }
-  const handleUpdate = (data) => {
-    console.log('Update data:',data)
-  }
   return (
     <div>
       <h1>Form Master React</h1>
@@ -36,7 +29,7 @@ function App() {
 
 
 
-      <ReusableForm fromTitle='SignUp' handleSubmit={handleSignup}>
+      {/* <ReusableForm fromTitle='SignUp' handleSubmit={handleSignup}>
         <div>
           <h4>Sign Up</h4>
           <p>Please Signup right now</p>
@@ -49,7 +42,10 @@ function App() {
           <h4>Update Profile</h4>
           <p>Please update profile right now</p>
         </div>
-      </ReusableForm>
+      </ReusableForm> */}
+
+
+      <Grandpa/>
 
     </div>
   )
