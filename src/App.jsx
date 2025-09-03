@@ -36,8 +36,20 @@ function App() {
 
 
 
-      <ReusableForm fromTitle='SignUp' handleSubmit={handleSignup} />
-      <ReusableForm fromTitle='User Update Profile' submitBTNText='Update' handleSubmit={handleUpdate}/>
+      <ReusableForm fromTitle='SignUp' handleSubmit={handleSignup}>
+        <div>
+          <h4>Sign Up</h4>
+          <p>Please Signup right now</p>
+        </div>
+      </ReusableForm>
+        
+      
+      <ReusableForm fromTitle='User Update Profile' submitBTNText='Update' handleSubmit={handleUpdate}>
+        <div>
+          <h4>Update Profile</h4>
+          <p>Please update profile right now</p>
+        </div>
+      </ReusableForm>
 
     </div>
   )

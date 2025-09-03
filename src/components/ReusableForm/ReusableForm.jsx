@@ -35,7 +35,7 @@
 
 import React from 'react';
 
-const ReusableForm = ({ fromTitle,handleSubmit, submitBTNText='Submit'}) => {
+const ReusableForm = ({ fromTitle,handleSubmit, submitBTNText='Submit', children}) => {
 
     const handleLocalSubmit = (e) => {
         e.preventDefault();
@@ -49,7 +49,8 @@ const ReusableForm = ({ fromTitle,handleSubmit, submitBTNText='Submit'}) => {
     }
     return (
         <div>
-            <h2>{ fromTitle}</h2>
+            {/* <h2>{ fromTitle}</h2> */}
+            {children}
             <form onSubmit={handleLocalSubmit}>
                 <input type="text" name='name' placeholder='Type name' />
                 <br />
